@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/disaccordo/.cache/gnome-builder/install/com.github.pomo-d-oro/host
+app-id=
+postbuild=
+prebuild=
+default=true
