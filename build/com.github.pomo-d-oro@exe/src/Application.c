@@ -27,8 +27,6 @@
 #include <glib-object.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <stdlib.h>
-#include <string.h>
 
 
 #define TYPE_APPLICATION (application_get_type ())
@@ -46,6 +44,16 @@ enum  {
 	APPLICATION_NUM_PROPERTIES
 };
 static GParamSpec* application_properties[APPLICATION_NUM_PROPERTIES];
+
+#define TODO_TYPE_WINDOW (todo_window_get_type ())
+#define TODO_WINDOW(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), TODO_TYPE_WINDOW, TodoWindow))
+#define TODO_WINDOW_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST ((klass), TODO_TYPE_WINDOW, TodoWindowClass))
+#define TODO_IS_WINDOW(obj) (G_TYPE_CHECK_INSTANCE_TYPE ((obj), TODO_TYPE_WINDOW))
+#define TODO_IS_WINDOW_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), TODO_TYPE_WINDOW))
+#define TODO_WINDOW_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), TODO_TYPE_WINDOW, TodoWindowClass))
+
+typedef struct _TodoWindow TodoWindow;
+typedef struct _TodoWindowClass TodoWindowClass;
 #define _g_object_unref0(var) ((var == NULL) ? NULL : (var = (g_object_unref (var), NULL)))
 
 struct _Application {
@@ -64,28 +72,30 @@ GType application_get_type (void) G_GNUC_CONST;
 Application* application_new (void);
 Application* application_construct (GType object_type);
 static void application_real_activate (GApplication* base);
-gint application_main (gchar** args,
-                       int args_length1);
+GType todo_window_get_type (void) G_GNUC_CONST;
+TodoWindow* todo_window_new (GtkApplication* application);
+TodoWindow* todo_window_construct (GType object_type,
+                                   GtkApplication* application);
 
 
 Application*
 application_construct (GType object_type)
 {
 	Application * self = NULL;
-#line 25 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	self = (Application*) g_object_new (object_type, "application-id", "com.github.pomo-d-oro", "flags", G_APPLICATION_FLAGS_NONE, NULL);
-#line 24 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
+#line 29 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
+	self = (Application*) g_object_new (object_type, "application-id", "com.github.michdorf.todo", "flags", G_APPLICATION_FLAGS_NONE, NULL);
+#line 28 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
 	return self;
-#line 80 "Application.c"
+#line 90 "Application.c"
 }
 
 
 Application*
 application_new (void)
 {
-#line 24 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
+#line 28 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
 	return application_construct (TYPE_APPLICATION);
-#line 89 "Application.c"
+#line 99 "Application.c"
 }
 
 
@@ -93,69 +103,32 @@ static void
 application_real_activate (GApplication* base)
 {
 	Application * self;
-	GtkApplicationWindow* main_window = NULL;
-	GtkApplicationWindow* _tmp0_;
-#line 31 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
+	TodoWindow* window = NULL;
+	TodoWindow* _tmp0_;
+#line 35 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
 	self = (Application*) base;
-#line 32 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	_tmp0_ = (GtkApplicationWindow*) gtk_application_window_new ((GtkApplication*) self);
-#line 32 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
+#line 36 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
+	_tmp0_ = todo_window_new ((GtkApplication*) self);
+#line 36 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
 	g_object_ref_sink (_tmp0_);
-#line 32 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	main_window = _tmp0_;
-#line 33 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	g_object_set ((GtkWindow*) main_window, "default-height", 300, NULL);
-#line 34 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	g_object_set ((GtkWindow*) main_window, "default-width", 300, NULL);
-#line 35 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	gtk_window_set_title ((GtkWindow*) main_window, "Pomo-D-Oro");
-#line 36 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	gtk_widget_show_all ((GtkWidget*) main_window);
-#line 31 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	_g_object_unref0 (main_window);
-#line 117 "Application.c"
-}
-
-
-gint
-application_main (gchar** args,
-                  int args_length1)
-{
-	gint result = 0;
-	Application* app = NULL;
-	Application* _tmp0_;
-#line 40 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	_tmp0_ = application_new ();
-#line 40 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	app = _tmp0_;
-#line 41 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	result = g_application_run ((GApplication*) app, args_length1, args);
-#line 41 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	_g_object_unref0 (app);
-#line 41 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	return result;
-#line 138 "Application.c"
-}
-
-
-int
-main (int argc,
-      char ** argv)
-{
-#line 39 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
-	return application_main (argv, argc);
-#line 148 "Application.c"
+#line 36 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
+	window = _tmp0_;
+#line 38 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
+	gtk_application_add_window ((GtkApplication*) self, (GtkWindow*) window);
+#line 35 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
+	_g_object_unref0 (window);
+#line 121 "Application.c"
 }
 
 
 static void
 application_class_init (ApplicationClass * klass)
 {
-#line 22 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
+#line 22 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
 	application_parent_class = g_type_class_peek_parent (klass);
-#line 22 "/home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/src/Application.vala"
+#line 22 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Application.vala"
 	((GApplicationClass *) klass)->activate = (void (*) (GApplication*)) application_real_activate;
-#line 159 "Application.c"
+#line 132 "Application.c"
 }
 
 

@@ -1,4 +1,7 @@
 # Listing files to compile
 sources = files (
-    'Application.vala'
+    'Main.vala',
+    'Application.vala',
+    'Widgets/HeaderBar.vala',
+    'Widgets/Window.vala'
 )

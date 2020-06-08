@@ -19,26 +19,23 @@
 * Authored by: Michele Dorph <michele@dorph.dk>
 */
 
-public class Application : Gtk.Application {
-
-    public Application () {
-        Object (
-            application_id: "com.github.pomo-d-oro",
-            flags: ApplicationFlags.FLAGS_NONE
+public class Application: Gtk.Application {
+    /* Samme navn som classen. 
+    * Både Application og construct bliver kaldt,
+    * men Application bliver kun kaldt ved første kald
+    * construct() bliver kaldt hver gang
+    */
+    public Application() { 
+        Object(
+            application_id: "com.github.michdorf.todo",
+            flags: /*GLib.*/ApplicationFlags.FLAGS_NONE
         );
     }
 
     protected override void activate () {
-        var main_window = new Gtk.ApplicationWindow (this);
-        main_window.default_height = 300;
-        main_window.default_width = 300;
-        main_window.title = "Pomo-D-Oro";
-        main_window.show_all ();
-    }
+        var window = new Todo.Window (this);
 
-    public static int main (string[] args) {
-        var app = new Application ();
-        return app.run (args);
+        add_window(window);
     }
 }
 

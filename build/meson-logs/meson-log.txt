@@ -1,27 +1,27 @@
-Build started at 2020-06-08T16:06:33.471875
+Build started at 2020-06-08T16:49:01.478010
 Main binary: /usr/bin/python3
 Python system: Linux
 The Meson build system
 Version: 0.49.2
-Source dir: /home/disaccordo/Progetti/Vala/com.github.pomo-d-oro
-Build dir: /home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/build
+Source dir: /home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro
+Build dir: /home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/build
 Build type: native build
 Project name: com.github.pomo-d-oro
 Project version: 0.0.1
 Sanity testing C compiler: cc
 Is cross compiler: False.
-Sanity check compiler command line: cc /home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/build/meson-private/sanitycheckc.c -o /home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/build/meson-private/sanitycheckc.exe
+Sanity check compiler command line: cc /home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/build/meson-private/sanitycheckc.c -o /home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/build/meson-private/sanitycheckc.exe
 Sanity check compile stdout:
 
 -----
 Sanity check compile stderr:
 
 -----
-Running test binary command: /home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/build/meson-private/sanitycheckc.exe
+Running test binary command: /home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/build/meson-private/sanitycheckc.exe
 Native C compiler: cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
 Running compile:
-Working directory:  /tmp/tmpatit5t6l
-Command line:  valac /tmp/tmpatit5t6l/testfile.vala -C 
+Working directory:  /tmp/tmpp40o2e16
+Command line:  valac /tmp/tmpp40o2e16/testfile.vala -C 
 
 Code:
  class MesonSanityCheck : Object { }
@@ -43,8 +43,8 @@ Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 -lglib-2.0
 Running compile:
-Working directory:  /tmp/tmph8n7dncj
-Command line:  cc /tmp/tmph8n7dncj/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmph8n7dncj/output.exe -O0 
+Working directory:  /tmp/tmptvsb6_i5
+Command line:  cc /tmp/tmptvsb6_i5/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmptvsb6_i5/output.exe -O0 
 
 Code:
  #include<stdio.h>
@@ -65,8 +65,8 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /tmp/tmp9rsepegs
-Command line:  cc /tmp/tmp9rsepegs/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp9rsepegs/output.obj -O0 --print-search-dirs 
+Working directory:  /tmp/tmp0o25yw4f
+Command line:  cc /tmp/tmp0o25yw4f/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp0o25yw4f/output.obj -O0 --print-search-dirs 
 
 Code:
  
@@ -88,6 +88,6 @@ Called `/usr/bin/pkg-config gtk+-3.0 --libs` -> 0
 Called `/usr/bin/pkg-config gtk+-3.0 --libs` -> 0
 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
 Dependency gtk+-3.0 found: YES 3.22.30
-Program meson/post_install.py found: YES (/usr/bin/env python3 /home/disaccordo/Progetti/Vala/com.github.pomo-d-oro/meson/post_install.py)
+Program meson/post_install.py found: YES (/usr/bin/env python3 /home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/meson/post_install.py)
 Build targets in project: 9
 Found ninja-1.8.2 at /usr/bin/ninja

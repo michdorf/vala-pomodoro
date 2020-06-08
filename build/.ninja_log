@@ -1,6 +1,12 @@
 # ninja log v5
-2	411	1591625204	data/com.github.pomo-d-oro.appdata.xml	51683279d4c02fd7
-2	588	1591625204	data/com.github.pomo-d-oro.desktop	f8bdc7cb4823aef4
-1	673	1591625204	com.github.pomo-d-oro@exe/src/Application.c	1992abfd0fc3e506
-673	1095	1591625205	com.github.pomo-d-oro@exe/meson-generated_src_Application.c.o	8a202b211165102b
-1097	1226	1591625205	com.github.pomo-d-oro	b413053b1818e100
+0	752	1591627747	data/com.github.pomo-d-oro.desktop	eb46892a3fa8dd0c
+2	844	1591627748	data/com.github.pomo-d-oro.appdata.xml	21fb2b7f1badb4bb
+0	955	1591627748	com.github.pomo-d-oro@exe/src/Main.c	377c2d39fa3a7351
+0	955	1591627748	com.github.pomo-d-oro@exe/src/Application.c	377c2d39fa3a7351
+0	955	1591627748	com.github.pomo-d-oro@exe/src/Widgets/HeaderBar.c	377c2d39fa3a7351
+0	955	1591627748	com.github.pomo-d-oro@exe/src/Widgets/Window.c	377c2d39fa3a7351
+955	1869	1591627749	com.github.pomo-d-oro@exe/meson-generated_src_Application.c.o	8a202b211165102b
+955	1900	1591627749	com.github.pomo-d-oro@exe/meson-generated_src_Main.c.o	8835f9caaf6accc4
+955	1944	1591627749	com.github.pomo-d-oro@exe/meson-generated_src_Widgets_HeaderBar.c.o	5c4b5eda0e160c0d
+959	1949	1591627749	com.github.pomo-d-oro@exe/meson-generated_src_Widgets_Window.c.o	8105abc0cd835457
+1949	2178	1591627749	com.github.pomo-d-oro	1429e2afca1acc46
