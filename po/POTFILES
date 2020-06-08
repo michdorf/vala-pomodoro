@@ -1,1 +1,4 @@
-src/Application.vala
+src/Widgets/Window.vala
+src/Widgets/HeaderBar.vala
+data/com.github.michdorf.pomo-d-oro.desktop.in
+data/com.github.michdorf.pomo-d-oro.appdata.xml.in

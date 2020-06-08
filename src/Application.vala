@@ -27,7 +27,7 @@ public class Application: Gtk.Application {
     */
     public Application() { 
         Object(
-            application_id: "com.github.michdorf.todo",
+            application_id: "com.github.michdorf.pomo-d-oro",
             flags: /*GLib.*/ApplicationFlags.FLAGS_NONE
         );
     }

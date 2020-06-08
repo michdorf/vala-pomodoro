@@ -6,6 +6,7 @@
 #include <glib.h>
 #include <glib-object.h>
 #include <gtk/gtk.h>
+#include <glib/gi18n-lib.h>
 
 
 #define TODO_TYPE_HEADER_BAR (todo_header_bar_get_type ())
@@ -91,7 +92,7 @@ todo_header_bar_construct (GType object_type,
 	self = (TodoHeaderBar*) g_object_new (object_type, "main-window", window, NULL);
 #line 5 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	return self;
-#line 95 "HeaderBar.c"
+#line 96 "HeaderBar.c"
 }
 
 
@@ -100,7 +101,7 @@ todo_header_bar_new (TodoWindow* window)
 {
 #line 5 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	return todo_header_bar_construct (TODO_TYPE_HEADER_BAR, window);
-#line 104 "HeaderBar.c"
+#line 105 "HeaderBar.c"
 }
 
 
@@ -109,7 +110,7 @@ _g_object_ref0 (gpointer self)
 {
 #line 49 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	return self ? g_object_ref (self) : NULL;
-#line 113 "HeaderBar.c"
+#line 114 "HeaderBar.c"
 }
 
 
@@ -129,7 +130,7 @@ todo_header_bar_open_dialog (TodoHeaderBar* self)
 #line 40 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	_tmp0_ = self->priv->_main_window;
 #line 40 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
-	_tmp1_ = (GtkDialog*) gtk_dialog_new_with_buttons ("Aggiungi un compito", (GtkWindow*) _tmp0_, GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT, "Custom Button", 1, "Custom Button 2", 2, NULL, NULL);
+	_tmp1_ = (GtkDialog*) gtk_dialog_new_with_buttons (_ ("Aggiungi un compito"), (GtkWindow*) _tmp0_, GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT, "Custom Button", 1, "Custom Button 2", 2, NULL, NULL);
 #line 40 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp1_);
 #line 40 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
@@ -158,7 +159,7 @@ todo_header_bar_open_dialog (TodoHeaderBar* self)
 	_g_object_unref0 (label);
 #line 39 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	_g_object_unref0 (dialog);
-#line 162 "HeaderBar.c"
+#line 163 "HeaderBar.c"
 }
 
 
@@ -175,7 +176,7 @@ todo_header_bar_get_main_window (TodoHeaderBar* self)
 	result = _tmp0_;
 #line 3 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	return result;
-#line 179 "HeaderBar.c"
+#line 180 "HeaderBar.c"
 }
 
 
@@ -187,7 +188,7 @@ todo_header_bar_set_main_window (TodoHeaderBar* self,
 	g_return_if_fail (self != NULL);
 #line 3 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	if (todo_header_bar_get_main_window (self) != value) {
-#line 191 "HeaderBar.c"
+#line 192 "HeaderBar.c"
 		TodoWindow* _tmp0_;
 #line 3 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		_tmp0_ = _g_object_ref0 (value);
@@ -197,7 +198,7 @@ todo_header_bar_set_main_window (TodoHeaderBar* self,
 		self->priv->_main_window = _tmp0_;
 #line 3 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		g_object_notify_by_pspec ((GObject *) self, todo_header_bar_properties[TODO_HEADER_BAR_MAIN_WINDOW_PROPERTY]);
-#line 201 "HeaderBar.c"
+#line 202 "HeaderBar.c"
 	}
 }
 
@@ -207,7 +208,7 @@ _todo_header_bar___lambda5_ (TodoHeaderBar* self)
 {
 #line 22 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	todo_header_bar_open_dialog (self);
-#line 211 "HeaderBar.c"
+#line 212 "HeaderBar.c"
 }
 
 
@@ -217,7 +218,7 @@ __todo_header_bar___lambda5__gtk_button_clicked (GtkButton* _sender,
 {
 #line 21 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	_todo_header_bar___lambda5_ ((TodoHeaderBar*) self);
-#line 221 "HeaderBar.c"
+#line 222 "HeaderBar.c"
 }
 
 
@@ -321,7 +322,7 @@ todo_header_bar_constructor (GType type,
 	_g_object_unref0 (add_button);
 #line 11 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	return obj;
-#line 325 "HeaderBar.c"
+#line 326 "HeaderBar.c"
 }
 
 
@@ -342,7 +343,7 @@ todo_header_bar_class_init (TodoHeaderBarClass * klass)
 	G_OBJECT_CLASS (klass)->finalize = todo_header_bar_finalize;
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), TODO_HEADER_BAR_MAIN_WINDOW_PROPERTY, todo_header_bar_properties[TODO_HEADER_BAR_MAIN_WINDOW_PROPERTY] = g_param_spec_object ("main-window", "main-window", "main-window", TODO_TYPE_WINDOW, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY));
-#line 346 "HeaderBar.c"
+#line 347 "HeaderBar.c"
 }
 
 
@@ -351,7 +352,7 @@ todo_header_bar_instance_init (TodoHeaderBar * self)
 {
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	self->priv = TODO_HEADER_BAR_GET_PRIVATE (self);
-#line 355 "HeaderBar.c"
+#line 356 "HeaderBar.c"
 }
 
 
@@ -365,7 +366,7 @@ todo_header_bar_finalize (GObject * obj)
 	_g_object_unref0 (self->priv->_main_window);
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 	G_OBJECT_CLASS (todo_header_bar_parent_class)->finalize (obj);
-#line 369 "HeaderBar.c"
+#line 370 "HeaderBar.c"
 }
 
 
@@ -399,13 +400,13 @@ _vala_todo_header_bar_get_property (GObject * object,
 		g_value_set_object (value, todo_header_bar_get_main_window (self));
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		break;
-#line 403 "HeaderBar.c"
+#line 404 "HeaderBar.c"
 		default:
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		break;
-#line 409 "HeaderBar.c"
+#line 410 "HeaderBar.c"
 	}
 }
 
@@ -426,13 +427,13 @@ _vala_todo_header_bar_set_property (GObject * object,
 		todo_header_bar_set_main_window (self, g_value_get_object (value));
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		break;
-#line 430 "HeaderBar.c"
+#line 431 "HeaderBar.c"
 		default:
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
 #line 1 "/home/disaccordo/Progetti/Vala/com.github.michdorf.pomo-d-oro/src/Widgets/HeaderBar.vala"
 		break;
-#line 436 "HeaderBar.c"
+#line 437 "HeaderBar.c"
 	}
 }
 

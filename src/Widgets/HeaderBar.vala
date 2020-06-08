@@ -38,14 +38,14 @@ public class Todo.HeaderBar: Gtk.HeaderBar {
 	
 	public void open_dialog() {
 		var dialog = new Gtk.Dialog.with_buttons (
-			"Aggiungi un compito",
+			_("Aggiungi un compito"),
 			main_window,
 			Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
-			"Custom Button", 1,
+			_("Custom Button"), 1,
 			"Custom Button 2", 2, null
 		);
 		
-		var label = new Gtk.Label("This is the content of my Dialog");
+		var label = new Gtk.Label(_("This is the content of my Dialog"));
 		var content_area = dialog.get_content_area();
 		content_area.add(label);
 		

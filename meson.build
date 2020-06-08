@@ -1,6 +1,6 @@
 # Project name, programming language and version
 project (
-    'com.github.pomo-d-oro',
+    'com.github.michdorf.pomo-d-oro',
     'vala', 'c',
     version: '0.0.1'
 )
