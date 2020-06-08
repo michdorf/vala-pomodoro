@@ -27,12 +27,12 @@ public class Todo.Window : Gtk.ApplicationWindow {
         stack.expand = true;
         
         var outstanding = new Gtk.Grid();
-		outstanding.add(new Gtk.Label("Outstanding page"));
+		outstanding.add(new Gtk.Label(_("Outstanding page")));
 		var completed = new Gtk.Grid();
-		completed.add(new Gtk.Label("Completed page"));
+		completed.add(new Gtk.Label(_("Completed page")));
 		
-		stack.add_titled(outstanding, "outstanding", "Outstanding");
-		stack.add_titled(completed, "completed", "Completed");
+		stack.add_titled(outstanding, "outstanding", _("Outstanding"));
+		stack.add_titled(completed, "completed", _("Completed"));
 		
 		add(stack);
         

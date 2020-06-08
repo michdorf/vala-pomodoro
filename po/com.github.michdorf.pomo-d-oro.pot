@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.michdorf.pomo-d-oro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-08 17:19+0200\n"
+"POT-Creation-Date: 2020-06-08 17:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,32 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Widgets/HeaderBar.vala:41
+#: src/Widgets/Window.vala:30
+msgid "Outstanding page"
+msgstr ""
+
+#: src/Widgets/Window.vala:32
+msgid "Completed page"
+msgstr ""
+
+#: src/Widgets/Window.vala:34
+msgid "Outstanding"
+msgstr ""
+
+#: src/Widgets/Window.vala:35
+msgid "Completed"
+msgstr ""
+
+#. / Per quando vuoi aggiungere un nuovo compito
+#: src/Widgets/HeaderBar.vala:18
+msgid "Aggiungi"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:42
 msgid "Aggiungi un compito"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:44
-msgid "Custom Button"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:48
+#: src/Widgets/HeaderBar.vala:49
 msgid "This is the content of my Dialog"
 msgstr ""
 

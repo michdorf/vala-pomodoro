@@ -9,7 +9,7 @@ project (
 i18n = import ('i18n')
 
 # Project arguments
-add_project_arguments (
+add_global_arguments (
     '-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name ()),
     language: 'c'
 )

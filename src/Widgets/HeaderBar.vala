@@ -14,7 +14,8 @@ public class Todo.HeaderBar: Gtk.HeaderBar {
 		
 		set_show_close_button(true);
 		
-		var add_button = new Gtk.Button.with_label("Aggiungi"); // Translatable
+		/// Per quando vuoi aggiungere un nuovo compito
+		var add_button = new Gtk.Button.with_label(_("Aggiungi"));
 		add_button.get_style_context().add_class("suggested-action");
 		add_button.valign = Gtk.Align.CENTER;
 		
@@ -41,7 +42,7 @@ public class Todo.HeaderBar: Gtk.HeaderBar {
 			_("Aggiungi un compito"),
 			main_window,
 			Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
-			_("Custom Button"), 1,
+			"Custom Button", 1,
 			"Custom Button 2", 2, null
 		);
 		

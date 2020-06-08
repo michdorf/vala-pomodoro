@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.michdorf.pomo-d-oro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-08 17:19+0200\n"
-"PO-Revision-Date: 2020-06-08 17:20+0200\n"
+"POT-Creation-Date: 2020-06-08 17:59+0200\n"
+"PO-Revision-Date: 2020-06-08 18:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da\n"
@@ -18,16 +18,32 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/Widgets/HeaderBar.vala:41
+#: src/Widgets/Window.vala:30
+msgid "Outstanding page"
+msgstr "Side med nye opgaver"
+
+#: src/Widgets/Window.vala:32
+msgid "Completed page"
+msgstr "Side med udførte opgaver"
+
+#: src/Widgets/Window.vala:34
+msgid "Outstanding"
+msgstr "Ventende"
+
+#: src/Widgets/Window.vala:35
+msgid "Completed"
+msgstr "Udført"
+
+#. / Per quando vuoi aggiungere un nuovo compito
+#: src/Widgets/HeaderBar.vala:18
+msgid "Aggiungi"
+msgstr "Tilføj"
+
+#: src/Widgets/HeaderBar.vala:42
 msgid "Aggiungi un compito"
 msgstr "Opret opgave"
 
-#: src/Widgets/HeaderBar.vala:44
-#, fuzzy
-msgid "Custom Button"
-msgstr "En knap"
-
-#: src/Widgets/HeaderBar.vala:48
+#: src/Widgets/HeaderBar.vala:49
 msgid "This is the content of my Dialog"
 msgstr "Dette er indholdet i min Dialog"
 
@@ -41,30 +57,35 @@ msgstr "Kommentar"
 
 #: data/com.github.michdorf.pomo-d-oro.desktop.in:6
 msgid "GenericName"
-msgstr ""
+msgstr "GenericName"
 
 #: data/com.github.michdorf.pomo-d-oro.desktop.in:8
 msgid "com.github.pomo-d-oro"
-msgstr ""
+msgstr "com.github.pomo-d-oro"
 
 #: data/com.github.michdorf.pomo-d-oro.desktop.in:11
 msgid "Develop"
-msgstr ""
+msgstr "Udvikl"
 
 #: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:7
 msgid "Your App's Name"
-msgstr ""
+msgstr "Din apps navn"
 
 #: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:8
 msgid "A Catchy Tagline"
-msgstr ""
+msgstr "En catchy Tagline"
 
 #: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:10
 msgid ""
 "A quick summary of your app's main selling points and features. Just a "
 "couple sentences per paragraph is best."
 msgstr ""
+"A quick summary of your app's main selling points and features. Just a "
+"couple sentences per paragraph is best."
 
 #: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:15
 msgid "Michele Dorph"
-msgstr ""
+msgstr "Michele Dorph"
+
+#~ msgid "Custom Button"
+#~ msgstr "En knap"
