@@ -21,10 +21,14 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Runs a single command using the runners shell
-    - name: Install Houston CI
-      run: npm i -g @elementaryos/houston
+    - uses: actions/setup-node@v1
+      with: 
+        node_version: 12
+    - uses:  elementary/houston
+        
+      # Runs a single command using the runners shell
+    - name: Install node packages
+      run: npm ci
 
     # Runs a set of commands using the runners shell
     - name: Test with Houston CI 
