@@ -6,7 +6,7 @@ Adds your awesome app description here!
 
 ## Get it from the elementary OS AppCenter!
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/Pomo-D-Oro)
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.michdorf.vala-pomodoro)
 
 This app is available on the elementary OS AppCenter.
 
@@ -35,7 +35,7 @@ cd Pomo-D-Oro
 meson build --prefix=/usr
 # cd to build, build and test
 cd build
-sudo ninja install && Pomo-D-Oro
+sudo ninja install && com.github.michdorf.vala-pomodoro
 ```
 
 ## Generating pot file
@@ -45,8 +45,8 @@ sudo ninja install && Pomo-D-Oro
 cd build
 
 # generates pot file
-sudo ninja Pomo-D-Oro-pot
+sudo ninja com.github.michdorf.vala-pomodoro-pot
 
 # to regenerate and propagate changes to every po file
-sudo ninja Pomo-D-Oro-update-po
+sudo ninja com.github.michdorf.vala-pomodoro-update-po
 ```
