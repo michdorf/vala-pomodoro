@@ -1,0 +1,16 @@
+Source: com.github.michdorf.pomo-d-oro
+Section: x11
+Priority: extra
+Maintainer: Michele De Chiffre <michele@dechiffre.dk>
+Build-Depends: debhelper (>= 10.5.1),
+               gettext,
+               libgtk-3-dev (>= 3.10),
+               meson,
+               valac (>= 0.28.0)
+Standards-Version: 4.1.1
+
+Package: com.github.michdorf.pomo-d-oro
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This is an app to help focusing on a task.
+ It is inspired by the Pomodoro Technique
