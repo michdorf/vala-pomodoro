@@ -1,4 +1,4 @@
 src/Widgets/Window.vala
 src/Widgets/HeaderBar.vala
-data/com.github.michdorf.pomo-d-oro.desktop.in
-data/com.github.michdorf.pomo-d-oro.appdata.xml.in
+data/com.github.michdorf.vala-pomodoro.desktop.in
+data/com.github.michdorf.vala-pomodoro.appdata.xml.in

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.github.michdorf.pomo-d-oro package.
+# This file is distributed under the same license as the com.github.michdorf.vala-pomodoro package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.michdorf.pomo-d-oro\n"
+"Project-Id-Version: com.github.michdorf.vala-pomodoro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-08 17:59+0200\n"
+"POT-Creation-Date: 2020-06-19 16:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Widgets/Window.vala:30
-msgid "Outstanding page"
-msgstr ""
-
-#: src/Widgets/Window.vala:32
+#: src/Widgets/Window.vala:35
 msgid "Completed page"
 msgstr ""
 
-#: src/Widgets/Window.vala:34
+#: src/Widgets/Window.vala:37
 msgid "Outstanding"
 msgstr ""
 
-#: src/Widgets/Window.vala:35
+#: src/Widgets/Window.vala:38
 msgid "Completed"
 msgstr ""
 
@@ -46,40 +42,40 @@ msgstr ""
 msgid "This is the content of my Dialog"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.desktop.in:4
+#: data/com.github.michdorf.vala-pomodoro.desktop.in:4
 msgid "Name"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.desktop.in:5
+#: data/com.github.michdorf.vala-pomodoro.desktop.in:5
 msgid "Comment"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.desktop.in:6
+#: data/com.github.michdorf.vala-pomodoro.desktop.in:6
 msgid "GenericName"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.desktop.in:8
+#: data/com.github.michdorf.vala-pomodoro.desktop.in:8
 msgid "com.github.pomo-d-oro"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.desktop.in:11
+#: data/com.github.michdorf.vala-pomodoro.desktop.in:11
 msgid "Develop"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:7
+#: data/com.github.michdorf.vala-pomodoro.appdata.xml.in:7
 msgid "Your App's Name"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:8
+#: data/com.github.michdorf.vala-pomodoro.appdata.xml.in:8
 msgid "A Catchy Tagline"
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:10
+#: data/com.github.michdorf.vala-pomodoro.appdata.xml.in:10
 msgid ""
 "A quick summary of your app's main selling points and features. Just a "
 "couple sentences per paragraph is best."
 msgstr ""
 
-#: data/com.github.michdorf.pomo-d-oro.appdata.xml.in:15
+#: data/com.github.michdorf.vala-pomodoro.appdata.xml.in:15
 msgid "Michele Dorph"
 msgstr ""

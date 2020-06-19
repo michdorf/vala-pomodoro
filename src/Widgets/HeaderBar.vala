@@ -1,8 +1,8 @@
-public class Todo.HeaderBar: Gtk.HeaderBar {
+public class Pomodoro.HeaderBar: Gtk.HeaderBar {
 
-	public Todo.Window main_window { get; construct; }
+	public Pomodoro.Window main_window { get; construct; }
 	
-	public HeaderBar(Todo.Window window) {
+	public HeaderBar(Pomodoro.Window window) {
 		Object(
 			main_window: window
 		);

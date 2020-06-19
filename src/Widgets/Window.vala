@@ -1,5 +1,5 @@
 // Bemærk, at den kører under namespace "MyApp"
-public class Todo.Window : Gtk.ApplicationWindow {
+public class Pomodoro.Window : Gtk.ApplicationWindow {
     private GLib.Settings settings;
     public Gtk.Stack stack { get; set; }
 
@@ -36,7 +36,7 @@ public class Todo.Window : Gtk.ApplicationWindow {
 		
 		add(stack);
         
-        var headerbar = new Todo.HeaderBar(this);
+        var headerbar = new Pomodoro.HeaderBar(this);
         set_titlebar(headerbar);
 
         show_all ();

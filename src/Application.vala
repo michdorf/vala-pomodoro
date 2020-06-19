@@ -27,13 +27,13 @@ public class Application: Gtk.Application {
     */
     public Application() { 
         Object(
-            application_id: "com.github.michdorf.pomo-d-oro",
+            application_id: "com.github.michdorf.vala-pomodoro",
             flags: /*GLib.*/ApplicationFlags.FLAGS_NONE
         );
     }
 
     protected override void activate () {
-        var window = new Todo.Window (this);
+        var window = new Pomodoro.Window (this);
 
         add_window(window);
     }
