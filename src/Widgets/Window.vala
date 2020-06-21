@@ -26,10 +26,8 @@ public class Pomodoro.Window : Gtk.ApplicationWindow {
         stack = new Gtk.Stack();
         stack.expand = true;
 
-        var outstanding = new Gtk.Box(Gtk.Orientation.VERTICAL, 8);
-        var listaAtt = new ListaTodo();
-        listaAtt.set_todos({new Todo("Køb ind"), new Todo("Fej")});
-		outstanding.add(listaAtt);
+        var outstanding = new ListaTodo();
+        outstanding.set_todos({new Todo("Køb ind"), new Todo("Fej")});
 		
 		var completed = new Gtk.Grid();
 		completed.add(new Gtk.Label(_("Completed page")));
