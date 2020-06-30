@@ -6,13 +6,18 @@ public class Pomodoro.ListaTodo : Gtk.Grid {
     public ListaTodo(Pomodoro.Todo[] todos = {}) {
         this.lista = new Gtk.ListBox();
         this.lista.hexpand = true;
+        this.lista.activate_on_single_click = true;
+        this.lista.row_activated.connect((row) => {
+            stdout.printf("Du valgte: %s\n", ((Gtk.Label)row.get_child()).get_text());
+        });
+
         attach(this.lista, 0, 0, 2, 1);
         
         /// Il buttone mostrato vicino al input
         var agg_entry = new Gtk.Entry();
+        agg_entry.hexpand = true;
         attach(agg_entry, 0, 1, 1, 1);
         var agg_button = new Gtk.Button.with_label(_("Aggiungi"));
-        agg_button.hexpand = true;
         attach(agg_button, 1, 1, 1, 1);
         agg_button.clicked.connect(() => { 
             aggiungi(agg_entry.get_text()); 
