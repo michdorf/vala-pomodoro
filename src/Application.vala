@@ -35,6 +35,8 @@ public class Application: Gtk.Application {
     protected override void activate () {
         var window = new Pomodoro.Window (this);
 
+        var loginWindow = new Pomodoro.LoginWindow(window);
+
         add_window(window);
     }
 }
